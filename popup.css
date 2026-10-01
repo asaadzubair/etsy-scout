@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  width: 260px;
+  background: #14141a;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #e9e9ee;
+}
+
+.popup {
+  padding: 16px;
+}
+
+.popup-brand {
+  font-weight: 700;
+  font-size: 14px;
+  color: #ff8a3d;
+  margin-bottom: 8px;
+}
+
+.popup-text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #cfcfd6;
+  margin: 0 0 8px;
+}
+
+.popup-text:last-child {
+  margin-bottom: 0;
+}
+
+.popup-text a {
+  color: #ff8a3d;
+}

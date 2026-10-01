@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Escout — Options</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <div class="options">
+    <h1>Escout — Etsy API key</h1>
+    <p>
+      Tags (part of <strong>COPY META DATA</strong>) and the optional
+      <strong>Shop Info</strong> overlay need your own free Etsy Open API v3
+      credentials. Everything else in Escout works without this.
+    </p>
+
+    <ol class="steps">
+      <li>Go to <a href="https://www.etsy.com/developers/register" target="_blank" rel="noopener">etsy.com/developers/register</a> and sign in with your Etsy account.</li>
+      <li>Create a new app — pick <strong>Personal Access</strong>, not commercial. No business details needed.</li>
+      <li>Copy the <strong>Keystring</strong> shown for your new app.</li>
+      <li>Click <strong>Show shared secret</strong> next to it and copy that too.</li>
+      <li>Paste both below and click Save.</li>
+    </ol>
+
+    <label for="keystring">Keystring</label>
+    <input type="text" id="keystring" autocomplete="off" spellcheck="false" />
+
+    <label for="sharedSecret">Shared secret</label>
+    <input type="text" id="sharedSecret" autocomplete="off" spellcheck="false" />
+
+    <button id="save">Save</button>
+    <span id="status" role="status"></span>
+
+    <p class="note">
+      Stored locally in your browser (<code>chrome.storage.sync</code>) — never sent
+      anywhere except directly to Etsy's own API. A personal Etsy app is capped at
+      5 requests/second and 5,000/day, which comfortably covers normal use of this
+      extension.
+    </p>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
